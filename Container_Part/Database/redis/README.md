@@ -35,13 +35,6 @@
 
   2. 대량의 데이터가 저장된 CSV파일들 불러오기
 
-      - 대량의 CSV파일은 시흥서버 /home/cschae/sampleCSV 내에 존재 (총 5개의 CSV파일)
-      
-          ```
-          $ rsync -avhz --progress --partial -e 'ssh -p 7771' 서버userID@59.14.236.153:/home/cschae/sampleCSV ./files
-          
-          ```
-
   3. this_run.sh 파일 수정
 
       - 각 redis 컨테이너의 ip, port 설정에따라 수정
@@ -58,7 +51,7 @@
           # [3] csv id field name
           carid="PHONE_NUM"
           # [4] redis ip
-          ip="192.168.99.100"
+          ip="0.0.0.100"
           # [5] redis port
           port=6379
 
