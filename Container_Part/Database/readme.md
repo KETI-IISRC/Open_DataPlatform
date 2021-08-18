@@ -26,8 +26,6 @@
 
 ### 1. file_to_opentsdb : reading CSV/Excel file, making JSON from CSV, sending JSON to openTSDB, and store data in openTSDB
 
-- [SW Link](https://github.com/KETI-IISRC/Docker/tree/main/sample/file_to_opentsdb)
-
 - **컨테이너 설명**
     - **FILE2TSDB : 지정된 디렉토리의 모든 CSV파일을 읽어서 데이터 추출 및 JSON 형식으로 변환 후, OpenTSDB에 전송하는 컨테이너**
         ```code
@@ -50,8 +48,6 @@
 
 ### **2. opentsdb_read_write_test** : Test reading 1,000,0000 datapoints from CSV file and storing data in openTSDB & reading and counting 1,000,0000 datapoints from openTSDB
 
-- [SW Link](https://github.com/KETI-IISRC/Docker/tree/main/sample/opentsdb_read_write_test)
-
 - **컨테이너 설명**
     - **FILE2TSDB : 지정된 디렉토리의 모든 CSV파일을 읽어서 데이터 추출 및 JSON 형식으로 변환 후, OpenTSDB에 전송하는 컨테이너**
     - **TSDB_READ : OpenTSDB로부터 데이터 쿼리하여 태그별 모든 데이터 포인트 수를 out.txt에 출력하는 컨테이너**
@@ -69,8 +65,6 @@
 ## InfluxDB Container
 #### InfluxDB: 높은 쓰기 및 쿼리로드를 처리하도록 설계된 시계열 데이터베이스
 
-- [SW Link](https://github.com/KETI-IISRC/Docker/tree/main/sample/influx)
-
 - ![data_put_to_influx](./influx/img/data_put_to_influx.png)
 
 - **SW 설명**
@@ -84,8 +78,6 @@
 
 ## MongoDB Container
 #### MongoDB: NoSQL 중 가장 많이 쓰이는 비관계형 데이터베이스
-
-- [SW Link](https://github.com/KETI-IISRC/Docker/tree/main/sample/mongo)
 
 - ![structure11](https://user-images.githubusercontent.com/69622147/111279447-0e5e6280-867e-11eb-8f9f-03eddaa8cbc5.png)
 
@@ -111,8 +103,6 @@
 ## MariaDB Container
 #### MariaDB: 오픈소스의 관계형 데이터베이스
 
-- [SW Link](https://github.com/KETI-IISRC/Docker/tree/main/sample/maria)
-
 - ![struct](https://user-images.githubusercontent.com/69622147/111277319-ac046280-867b-11eb-98d7-fd4952eb3afc.png)
 
 ### maria: CSV data storage and query function implementation in MARIADB
@@ -132,8 +122,6 @@
 
 ## RedisDB Container
 #### RedisDB: 모든 데이터를 메모리에 저장하고 조회하기에 빠른 Read, Write 속도를 보장하는 비관계형 데이터베이스
-
-- [SW Link](https://github.com/KETI-IISRC/Docker/tree/main/sample/redis)
 
 - ![redis](https://user-images.githubusercontent.com/69622147/111280386-1b2f8600-867f-11eb-943f-4125e8e37c1e.png)
 
