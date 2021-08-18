@@ -19,7 +19,7 @@ services:
         - "./app_file2otsdb_volume:/app/FILE2TSDB"
         - "./files:/app/files"
       environment:
-        - TSDB_IP=keti-ev.iptime.org # 저장할 opentsdb의 
+        - TSDB_IP= # 저장할 opentsdb의 
         - TSDB_PORT=60010 # 저장할 opentsdb의 port
         - FIELDNAME=FUEL_CONSUM_DAY|FUEL_CONSUM_TOTAL # openTSDB에 저장할 CSV파일 데이터의 컬럼명 ('|'문자로 여러 컬럼 저장가능)
         - IDFIELD=PHONE_NUM # openTSDB에 저장할 CSV파일의 데이터 중 carid 컬럼명
