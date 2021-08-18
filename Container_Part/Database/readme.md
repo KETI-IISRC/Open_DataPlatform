@@ -16,16 +16,6 @@
 
   - 오픈소스로 배포되어 무료로 사용 가능, shell에서 Docker 명령을 일일이 수행할 필요가 없이 Web UI 로 손쉽게 관리 가능
 
-### 시흥서버에 portainer 구축
-
-  - portainer docker 실행 명령어
-    
-        $ docker run -d -p [외부포트]:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data --restart=always portainer/portainer
-
-  - http://59.14.236.153:9000/
-    (ID : keti / PW : keti1234!)
-    ![protainer_web](../portainer/img/portainer_main_page.png)
-
 ----
 ## DB docker container
 
