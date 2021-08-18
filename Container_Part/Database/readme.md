@@ -32,10 +32,10 @@
       app_file_to_otsdb
       ├── app_file_to_otsdb: CSV 데이터를 OpenTSDB에 저장해주는 코드, docker image 생성 파일(Dockerfile) 내재
       │   ├── FILE2TSDB: convert CSV to JSON format, send JSON format to openTSDB and store data in openTSDB
-      │   ├── data file: 01225797247.csv
+      │   ├── data file: data.csv
       │   ├── docker image-generated file: Dockerfile, requirements.txt
       ├── compse: docker-compose 실행 디렉토리
-      │   ├── data file: 01225797247.csv
+      │   ├── data file: data.csv
       │   ├── app_file2otsdb_volume
       │   ├── opentsdb_volume 
       └   └── docker-compose.yml: docker-composer로 실행하기 전, 각 컨테이너의 설정을 셋팅할 수 있는 yml파일  
