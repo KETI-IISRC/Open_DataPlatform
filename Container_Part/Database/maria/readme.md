@@ -57,9 +57,9 @@
                     - ./mariadb_volumes/data:/var/lib/mysql
                     - ./mariadb_volumes/conf.d:/etc/mysql/conf.d
                 environment:      # mariaDB 구축시 환경 변수
-                    MYSQL_USER: keti
-                    MYSQL_PASSWORD: keti1234
-                    MYSQL_ROOT_PASSWORD: keti1234
+                    MYSQL_USER: 
+                    MYSQL_PASSWORD: 
+                    MYSQL_ROOT_PASSWORD: 
                     MYSQL_DATABASE : testdb
 
 
@@ -72,10 +72,10 @@
                 - "./app_csv2maria_volumes:/app/CSV2MARIA"
                 - "./CSV_in:/app/CSV_in"
             environment:
-                - MARIA_IP=keti-ev.iptime.org # 접속할 MARIA디비의 ip
+                - MARIA_IP= # 접속할 MARIA디비의 ip
                 - MARIA_PORT=3307 # 접속할 MARIA디비의 port
-                - MARIA_USER=root # 접속할 MARIA디비의 루트 사용자명
-                - MARIA_PASSWORD=keti1234 # 접속할 MARIA디비의 루트 사용자 비밀번호
+                - MARIA_USER= # 접속할 MARIA디비의 루트 사용자명
+                - MARIA_PASSWORD= # 접속할 MARIA디비의 루트 사용자 비밀번호
                 - MARIA_DB_NAME=cardata # 접속하거나 새로 생성할 MARIA디비의 DB이름
                 - MARIA_TABLE_NAME=table1 # 접속하거나 새로 생성할 MARIA디비의 TABLE이름
             container_name: csv2maria_container
@@ -91,10 +91,10 @@
             volumes:
                 - "./app_read_maria_volumes:/app/READ_MARIA"
             environment:
-                - MARIA_IP=keti-ev.iptime.org # 접속할 MARIA디비의 ip
+                - MARIA_IP= # 접속할 MARIA디비의 ip
                 - MARIA_PORT=3307 # 접속할 MARIA디비의 port
-                - MARIA_USER=root # 접속할 MARIA디비의 루트 사용자명
-                - MARIA_PASSWORD=keti1234 # 접속할 MARIA디비의 루트 사용자 비밀번호
+                - MARIA_USER= # 접속할 MARIA디비의 루트 사용자명
+                - MARIA_PASSWORD= # 접속할 MARIA디비의 루트 사용자 비밀번호
                 - MARIA_DB_NAME=cardata # 접속할 MARIA디비의 DB이름
                 - MARIA_TABLE_NAME=table1 # 접속할 MARIA디비의 TABLE이름
                 - QUERY_ROWS=10 # table로부터 쿼리할 총 row 수 
