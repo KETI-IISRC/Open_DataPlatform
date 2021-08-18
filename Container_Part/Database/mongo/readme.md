@@ -94,7 +94,7 @@
                 - "./app_csv2mongo_volume:/app/CSV2MONGO"
                 - "./CSV_in:/app/CSV_in"
             environment:
-                - MONGO_IP=keti-ev.iptime.org # 접속할 몽고디비의 ip
+                - MONGO_IP= # 접속할 몽고디비의 ip
                 - MONGO_PORT=27017 # 접속할 몽고디비의 port
                 - MONGO_DB_NAME=testdb # 접속할 몽고디비의 DB이름
                 - MONGO_USER=strapi # 접속할 몽고디비의 사용자명
@@ -114,7 +114,7 @@
                 - "./app_mongo2csv_volume:/app/MONGO2CSV"
                 - "./CSV_out:/app/CSV_out"
             environment:
-                - MONGO_IP=keti-ev.iptime.org # 접속할 몽고디비의 port
+                - MONGO_IP= # 접속할 몽고디비의 port
                 - MONGO_PORT=27017 # 접속할 몽고디비의 port
                 - MONGO_USER=strapi # 접속할 몽고디비의 사용자명
                 - MONGO_PASSWORD=strapi # 접속할 몽고디비의 비밀번호
